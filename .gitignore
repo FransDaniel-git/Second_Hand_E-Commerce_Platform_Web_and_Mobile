@@ -1,0 +1,184 @@
+# ============================================================
+# ReuseMart Root .gitignore
+# Covers: Backend (Laravel), Mobile (Flutter), Web (React/Vite)
+# ============================================================
+
+# =========================
+# OS Generated Files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =========================
+# Editor / IDE
+# =========================
+.idea/
+.vscode/
+.fleet/
+.nova/
+.zed/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# =========================
+# RAHASIA / SECRETS
+# =========================
+
+# Environment files (berisi credentials, API keys, dll)
+.env
+.env.*
+!.env.example
+
+# Firebase Admin SDK credentials
+Backend/storage/app/firebase/*.json
+
+# Firebase service account key di root Backend
+Backend/reusemart-*.json
+
+# Google Services (berisi API keys)
+Mobile/android/app/google-services.json
+
+# Firebase Options (berisi API keys)
+Mobile/lib/firebase_options.dart
+
+# Apple Firebase config
+Mobile/ios/Runner/GoogleService-Info.plist
+
+# Private keys & certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# =========================
+# Backend (Laravel/PHP)
+# =========================
+Backend/vendor/
+Backend/node_modules/
+Backend/.phpunit.cache
+Backend/.phpunit.result.cache
+Backend/.phpactor.json
+Backend/auth.json
+Backend/Homestead.json
+Backend/Homestead.yaml
+
+# Laravel storage (uploaded files, cache, sessions, logs)
+Backend/storage/app/public/ktp_photos/
+Backend/storage/app/public/produk/
+Backend/storage/app/public/thumbnails/
+Backend/storage/app/public/payment_proofs/
+Backend/storage/app/public/merchandise_images/
+Backend/storage/app/public/organisasi_logos/
+Backend/storage/app/public/optimized/
+Backend/storage/framework/cache/data/
+Backend/storage/framework/sessions/
+Backend/storage/framework/testing/
+Backend/storage/framework/views/
+Backend/storage/logs/*.log
+Backend/storage/pail/
+
+# Public storage symlink
+Backend/public/storage
+
+# Build output
+Backend/public/build/
+Backend/public/hot
+
+# Composer lock (opsional, bisa di-track jika tim setuju)
+# Backend/composer.lock
+
+# Batch scripts (lokal saja)
+Backend/*.bat
+
+# =========================
+# Mobile (Flutter/Dart)
+# =========================
+Mobile/.dart_tool/
+Mobile/.flutter-plugins
+Mobile/.flutter-plugins-dependencies
+Mobile/.pub-cache/
+Mobile/.pub/
+Mobile/build/
+Mobile/.packages
+Mobile/.metadata
+
+# Flutter generated
+Mobile/**/doc/api/
+Mobile/**/ios/Flutter/.last_build_id
+
+# Symbolication
+Mobile/app.*.symbols
+
+# Obfuscation
+Mobile/app.*.map.json
+
+# Android build
+Mobile/android/app/debug/
+Mobile/android/app/profile/
+Mobile/android/app/release/
+Mobile/android/.gradle/
+Mobile/android/build/
+Mobile/android/app/build/
+Mobile/android/local.properties
+Mobile/android/key.properties
+
+# iOS build
+Mobile/ios/Pods/
+Mobile/ios/.symlinks/
+Mobile/ios/Flutter/Flutter.framework
+Mobile/ios/Flutter/Flutter.podspec
+Mobile/ios/Flutter/Generated.xcconfig
+Mobile/ios/Flutter/app.flx
+Mobile/ios/Flutter/flutter_assets/
+Mobile/ios/Flutter/engine/
+Mobile/ios/ServiceDefinitions.json
+Mobile/ios/Runner/GeneratedPluginRegistrant.*
+
+# Pub lock (opsional)
+# Mobile/pubspec.lock
+
+# =========================
+# Web (React/Vite)
+# =========================
+Web/node_modules/
+Web/dist/
+Web/dist-ssr/
+Web/*.local
+
+# Logs
+Web/logs/
+Web/*.log
+Web/npm-debug.log*
+Web/yarn-debug.log*
+Web/yarn-error.log*
+Web/pnpm-debug.log*
+Web/lerna-debug.log*
+
+# =========================
+# General
+# =========================
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Coverage & test results
+coverage/
+*.lcov
+.nyc_output/
+
+# Temp files
+*.tmp
+*.temp
+*.bak
+*.orig

@@ -1,0 +1,46 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/pail
+/vendor
+.env
+.env.*
+!.env.example
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/auth.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# OS files
+.DS_Store
+
+# Firebase credentials (RAHASIA)
+/storage/app/firebase/*.json
+reusemart-*.json
+
+# Uploaded files (tidak perlu di-track)
+/storage/app/public/ktp_photos/
+/storage/app/public/produk/
+/storage/app/public/thumbnails/
+/storage/app/public/payment_proofs/
+/storage/app/public/merchandise_images/
+/storage/app/public/organisasi_logos/
+/storage/app/public/optimized/
+/storage/framework/cache/data/
+/storage/framework/sessions/
+/storage/framework/testing/
+/storage/framework/views/
+/storage/logs/*.log
+
+# Local batch scripts
+*.bat
